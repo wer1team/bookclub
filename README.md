@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=87CEFA&height=200&section=header&text=GhostBookClub👻&fontSize=60&animation=twinkling&fontColor=F0F8FF&fontAlign=70&fontAlignY=35)
+![header](https://capsule-render.vercel.app/api?type=waving&color=C0C0C0&height=200&section=header&text=GHOST👻BookClub&fontSize=60&animation=twinkling&fontColor=F0F8FF&fontAlign=65&fontAlignY=35)
 
 ## We are One TEAM 😊
  - 김경민 (Junior Developer)
