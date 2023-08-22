@@ -20,16 +20,17 @@ export default function Register() {
         <h4>CREATE ACCOUNT</h4>
         <form method="POST" action="/api/auth/signup">
           <label htmlFor="name">Ghostname</label>
-          <input id="name" name="name" type="text" />
+          <input id="name" name="name" type="text" required />
           <label htmlFor="email">Email</label>
-          <input id="email" name="email" type="text" />
+          <input id="email" name="email" type="text" required />
           <label htmlFor="password">Password</label>
-          <input id="password" name="password" type="password" />
+          <input id="password" name="password" type="password" required />
           <label htmlFor="confirm_password">Confirm password</label>
           <input
             id="confirm_password"
             name="confirm_password"
             type="password"
+            required
           />
           <button type="submit">JOIN</button>
         </form>
