@@ -1,5 +1,5 @@
-import "../globals.css";
 import "./register.css";
+import "../globals.css";
 import Image from "next/image";
 import Link from "next/link";
 
