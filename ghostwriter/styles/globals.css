@@ -21,6 +21,7 @@ body {
   width: 40%;
   height: 90vh;
   overflow: hidden;
+  z-index: 90;
 }
 .link {
   text-decoration: none;
@@ -38,6 +39,23 @@ body {
   position: absolute;
   left: -120px;
   margin-top: -90px;
+}
+.btn_auth {
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+  top: -8vh;
+  background-color: #fff;
+  width: 50%;
+  display: block;
+  margin-bottom: 2%;
+  color: #ff6100;
+}
+.btn_auth:hover {
+  color: #000;
+}
+button {
+  cursor: pointer;
 }
 @font-face {
   font-family: "bodoni";

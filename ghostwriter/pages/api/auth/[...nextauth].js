@@ -2,6 +2,7 @@ import { connectDB } from "@/util/database";
 import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
 import NextAuth from "next-auth";
 import GithubProvider from "next-auth/providers/github";
+import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcrypt";
 
@@ -10,6 +11,12 @@ export const authOptions = {
     GithubProvider({
       clientId: "c24f803bcfad9112c38a",
       clientSecret: "11fb52833ebeab4565664133a8c7b029536b2af5",
+    }),
+
+    GoogleProvider({
+      clientId:
+        "39107283549-6k4jio04ljg2pdm84m2ggm2dhpmak8gi.apps.googleusercontent.com",
+      clientSecret: "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",
     }),
     CredentialsProvider({
       //1. 로그인페이지 폼 자동생성해주는 코드
@@ -67,6 +74,9 @@ export const authOptions = {
       session.user = token.user;
       return session;
     },
+  },
+  pages: {
+    signIn: "/signin",
   },
   secret: "chichikim0901",
   adapter: MongoDBAdapter(connectDB),

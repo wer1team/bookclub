@@ -1,5 +1,4 @@
-import "../globals.css";
-import styles from "./register.css";
+import styles from "./register.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
