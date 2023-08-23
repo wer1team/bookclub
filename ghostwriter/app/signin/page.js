@@ -1,3 +1,4 @@
+import "../globals.css";
 import "./signin.css";
 import Image from "next/image";
 import Link from "next/link";
