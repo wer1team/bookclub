@@ -1,12 +1,9 @@
-body {
-  background-color: #ff6100;
-}
 .logo {
   position: absolute;
   left: -30px;
   top: -20px;
 }
-h4 {
+.title {
   font-family: "distillery";
   font-size: 3em;
   text-align: center;
@@ -23,25 +20,31 @@ h4 {
   box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
   border-radius: 80px;
 }
-form {
+.form_box {
   position: relative;
   top: -10%;
   padding: 4% 13% 0 13%;
 }
-label {
+.label_name,
+.label_email,
+.label_password,
+.label_confirm_password {
   font-family: "bodoni";
   display: block;
   font-size: 1.3em;
   margin-bottom: 1.5%;
 }
-input {
+.input_name,
+.input_email,
+.input_password,
+.input_confirm_password {
   background: #f5f5f5;
   border: none;
   margin-bottom: 10%;
   height: 1.8em;
   width: 100%;
 }
-button {
+.btn_submit {
   position: relative;
   background: #ff6100;
   border-radius: 30px;
