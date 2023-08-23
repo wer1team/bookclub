@@ -1,0 +1,14 @@
+body {
+  background-color: #ff6100;
+}
+button {
+  cursor: pointer;
+}
+@font-face {
+  font-family: "bodoni";
+  src: url("../public/fonts/bodoni-72-book.ttf") format("truetype");
+}
+@font-face {
+  font-family: "distillery";
+  src: url("../public/fonts/distillerydisplay.ttf") format("truetype");
+}
