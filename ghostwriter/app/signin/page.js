@@ -1,5 +1,5 @@
-import "../globals.css";
 import "./signin.css";
+import "../globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import AuthBtn from "./AuthBtn";
@@ -20,14 +20,14 @@ export default function Signin() {
       <div className="login_box">
         <h4 className="title">SIGN IN</h4>
         <AuthBtn />
-        <form method="POST" action="/api/auth/login" className="form_box">
+        <form method="POST" action="/api/auth/login" className="form_box_s">
           <input
             id="email"
             name="email"
             type="text"
             required
             placeholder="Email address"
-            className="input_email"
+            className="input_email_s"
           />
           <input
             id="password"
@@ -35,9 +35,9 @@ export default function Signin() {
             type="password"
             required
             placeholder="Password"
-            className="input_password"
+            className="input_password_s"
           />
-          <button className="btn_submit" type="submit">
+          <button className="btn_submit_s" type="submit">
             JOIN
           </button>
         </form>
