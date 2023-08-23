@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import "./globals.css";
 import { Inter } from "next/font/google";
 import { useState } from "react";
 import Image from "next/image";
@@ -24,7 +23,7 @@ export default function RootLayout({ children }) {
             height={25}
           />
         </div>
-        <div className={`navbar ${isNavbarVisible ? "visible" : ""}`}>
+        <div className={`navbar ${isNavbarVisible ? "visible" : ""} `}>
           <div className="wrapLink">
             <Link href="/" className="link">
               BOOK CLUB OF GHOST
@@ -35,7 +34,8 @@ export default function RootLayout({ children }) {
             <Link href="/" className="link">
               VOTE FOR NEXT MONTH
             </Link>
-            <Link href="/login" className="link">
+
+            <Link href="/signin" className="link">
               SIGN IN
             </Link>
             <Image
