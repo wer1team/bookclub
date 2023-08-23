@@ -1,12 +1,9 @@
-body {
-  background-color: #ff6100;
-}
 .logo {
   position: absolute;
   left: -30px;
   top: -20px;
 }
-h4 {
+.title {
   font-family: "distillery";
   font-size: 3em;
   text-align: center;
@@ -23,7 +20,7 @@ h4 {
   box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
   border-radius: 80px;
 }
-form {
+.form_box {
   position: relative;
   top: -10%;
   padding: 4% 13% 0 13%;

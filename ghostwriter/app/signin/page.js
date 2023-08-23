@@ -1,11 +1,11 @@
-import styles from "./signin.module.css";
+import "./signin.css";
 import Image from "next/image";
 import Link from "next/link";
 import AuthBtn from "./AuthBtn";
 
 export default function Signin() {
   return (
-    <div className={styles.container}>
+    <div>
       <Link href="/">
         <Image
           src="/images/Ghostwriter.svg"
@@ -17,15 +17,16 @@ export default function Signin() {
       </Link>
 
       <div className="login_box">
-        <h4>SIGN IN</h4>
+        <h4 className="title">SIGN IN</h4>
         <AuthBtn />
-        <form method="POST" action="/api/auth/login">
+        <form method="POST" action="/api/auth/login" className="form_box">
           <input
             id="email"
             name="email"
             type="text"
             required
             placeholder="Email address"
+            className="input_email"
           />
           <input
             id="password"
@@ -33,8 +34,11 @@ export default function Signin() {
             type="password"
             required
             placeholder="Password"
+            className="input_password"
           />
-          <button type="submit">JOIN</button>
+          <button className="btn_submit" type="submit">
+            JOIN
+          </button>
         </form>
         <div className="signin_box">
           <span>Don't have an account?&nbsp;&nbsp;&nbsp;</span>
