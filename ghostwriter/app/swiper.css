@@ -47,7 +47,6 @@ body {
 }
 .sub_title_1,
 .sub_title_2 {
-  font-family: "distillery";
   display: block;
   font-size: 5em;
   margin: 0 0;
@@ -96,7 +95,6 @@ body {
 .description h3 {
   position: relative;
   width: 60%;
-  font-family: "distillery";
   font-size: 3.5em;
   text-align: left;
   top: 20%;
@@ -169,7 +167,6 @@ body {
 .slide3_swiper h3 {
   position: absolute;
   top: 0;
-  font-family: "distillery";
   font-size: 2em;
   left: 40%;
   margin-top: 2%;
@@ -224,12 +221,142 @@ body {
 .slide3_swiper > .swiper-scrollbar > .swiper-scrollbar-drag {
   background-color: black;
 }
-
-.slide3_swiper h4,
-.slide3_swiper p {
-  font-family: "distillery";
-}
-.slide3_swiper h4 {
+.slide3_swiper .slide3_h4_1,
+.slide3_swiper .slide3_h4_2,
+.slide3_swiper .slide3_h4_3,
+.slide3_swiper .slide3_h4_4,
+.slide3_swiper .slide3_h4_5,
+.slide3_swiper .slide3_h4_6 {
   font-size: 1.3em;
-  margin: 2%;
+  font-weight: 100;
+  margin: 5%;
+}
+.slide3_swiper .slide3_p_1 {
+  position: relative;
+  font-weight: 100;
+  width: 50%;
+  left: 40%;
+  top: 10%;
+}
+.slide3_swiper .slide3_p_number {
+  position: absolute;
+  font-size: 2.5em;
+  right: 7%;
+  top: 57%;
+}
+.slide3_swiper .black_ghost {
+  position: absolute;
+  top: 15%;
+  left: -15%;
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center;
+}
+@keyframes swing {
+  0% {
+    transform: scaleX(-1) rotate(5deg);
+  }
+  100% {
+    transform: scaleX(-1) rotate(-5deg);
+  }
+}
+.slide3_swiper .link_signin {
+  position: relative;
+  background-color: #ff6100;
+  padding: 3% 15%;
+  left: 15%;
+  top: 10%;
+  border-radius: 50px;
+}
+.slide3_swiper .slide3_p_2,
+.slide3_swiper .slide3_p_3,
+.slide3_swiper .slide3_p_4,
+.slide3_swiper .slide3_p_5,
+.slide3_swiper .slide3_p_6 {
+  position: relative;
+  width: 60%;
+  font-weight: 100;
+  margin-left: 10%;
+  text-align: left;
+  font-family: "bodoni";
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
+.slide3_swiper .white_ghost {
+  position: relative;
+  top: 10%;
+  left: -5%;
+  transition: top 0.5s ease-in-out;
+}
+.slide3_swiper .white_ghost:hover {
+  top: -10%;
+}
+.slide3_swiper .slide3_span {
+  position: relative;
+  font-weight: 100;
+  font-family: "bodoni";
+  font-size: 0.8vw;
+  display: block;
+  width: 65%;
+  margin-left: 10%;
+  margin-top: -5%;
+  text-align: left;
+  line-height: 1.4em;
+}
+.slide3_swiper .slide3_p_3 {
+  width: 80%;
+  height: 50%;
+  margin-top: -5%;
+  font-size: 0.9em;
+}
+.slide3_swiper .link_myreadingjournal {
+  position: relative;
+  background-color: #ff6100;
+  padding: 3% 4.5%;
+  border-radius: 50px;
+  top: 3%;
+  left: -12%;
+}
+.slide3_swiper .slide3_p_4 {
+  margin-top: -5%;
+}
+.slide3_swiper .candy_image {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.slide3_swiper .link_bookclub {
+  position: relative;
+  background-color: #ff6100;
+  padding: 3% 4%;
+  border-radius: 50px;
+  top: 3%;
+}
+.slide3_swiper .feather_image {
+  position: absolute;
+  top: 30%;
+  right: -5%;
+}
+.slide3_swiper .slide3_p_6 {
+  margin-top: 20%;
+}
+.slide3_swiper .small_ghost {
+  position: absolute;
+  top: 20%;
+  right: -15%;
+  animation: swingLast ease-in-out 1s infinite alternate;
+  transform-origin: center;
+}
+@keyframes swingLast {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
 }

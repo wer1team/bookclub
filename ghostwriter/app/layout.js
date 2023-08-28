@@ -47,6 +47,7 @@ export default function RootLayout({ children }) {
               height={500}
               className="img_navbar"
             />
+            <p className="peekabook">PEEK A BOOK</p>
           </div>
         </div>
         {children}

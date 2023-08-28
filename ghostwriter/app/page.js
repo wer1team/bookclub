@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import "./swiper.css";
+import "./globals.css";
 import { Scrollbar, Pagination, Keyboard } from "swiper/modules";
 import Slide01 from "./index/Slide01";
 import Slide02 from "./index/Slide02";
