@@ -8,7 +8,7 @@ export default function LoginBtn() {
     <button
       className="button"
       onClick={() => {
-        signOut();
+        signOut({ callbackUrl: "/" });
       }}
     >
       LogOut

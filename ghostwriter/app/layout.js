@@ -1,5 +1,6 @@
 // layout.js
 "use client";
+import { useRouter } from "next/navigation";
 import "./layout.css";
 import "./globals.css";
 import Link from "next/link";
@@ -27,6 +28,17 @@ function LayoutContent({ children }) {
   };
   const { data: session } = useSession(); // 클라이언트 사이드에서 세션을 가져옵니다.
   console.log(session);
+  const router = useRouter();
+
+  const handleLinkClick = () => {
+    if (!session) {
+      alert("Only for Ghostwriter. Please sign in.");
+      router.push("/");
+    } else {
+      router.push("/myJournal");
+    }
+  };
+
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -43,9 +55,9 @@ function LayoutContent({ children }) {
             <Link href="/" className="link">
               BOOK CLUB OF GHOST
             </Link>
-            <Link href="/myJournal" className="link">
+            <button className="button" onClick={handleLinkClick}>
               MY READING JOURNAL
-            </Link>
+            </button>
             <Link href="/" className="link">
               VOTE FOR NEXT MONTH
             </Link>
