@@ -2,6 +2,7 @@ import "./register.css";
 import "../globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import Video from "next-video";
 
 export default function Register() {
   return (
@@ -15,7 +16,19 @@ export default function Register() {
           className="logo"
         />
       </Link>
-
+      {/* <div className="video_box">
+        <Video
+          className="video1"
+          src={"/images/ghostWriterVideo.mp4"} // 비디오 파일 경로
+          autoPlay
+          muted
+          loop
+          playsInline
+          width={700}
+          height={700}
+          controls={false}
+        ></Video>
+      </div> */}
       <div className="register_box">
         <h4 className="title">CREATE ACCOUNT</h4>
         <form method="POST" action="/api/auth/signup" className="form_box">

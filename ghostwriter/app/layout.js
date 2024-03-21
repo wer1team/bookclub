@@ -1,19 +1,32 @@
+// layout.js
 "use client";
-
 import "./layout.css";
 import "./globals.css";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import { useState } from "react";
 import Image from "next/image";
+import { signOut } from "next-auth/react";
+import { SessionProvider, useSession } from "next-auth/react";
+import LogoutBtn from "./LogoutBtn";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
-  let [isNavbarVisible, setNavbarVisible] = useState(false);
-  let toggleNavbar = () => {
+  return (
+    <SessionProvider>
+      {/* <useSession> 훅을 <SessionProvider> 컴포넌트 내부로 이동 */}
+      <LayoutContent>{children}</LayoutContent>
+    </SessionProvider>
+  );
+}
+function LayoutContent({ children }) {
+  const [isNavbarVisible, setNavbarVisible] = useState(false);
+  const toggleNavbar = () => {
     setNavbarVisible(!isNavbarVisible);
   };
+  const { data: session } = useSession(); // 클라이언트 사이드에서 세션을 가져옵니다.
+  console.log(session);
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -30,16 +43,21 @@ export default function RootLayout({ children }) {
             <Link href="/" className="link">
               BOOK CLUB OF GHOST
             </Link>
-            <Link href="/" className="link">
+            <Link href="/myJournal" className="link">
               MY READING JOURNAL
             </Link>
             <Link href="/" className="link">
               VOTE FOR NEXT MONTH
             </Link>
-
-            <Link href="/signin" className="link">
-              SIGN IN
-            </Link>
+            {session != null ? (
+              <div>
+                <LogoutBtn />
+              </div>
+            ) : (
+              <Link href="/signin" className="link">
+                SIGN IN
+              </Link>
+            )}
             <Image
               src="/images/ghostwithoutpen.svg"
               alt="ghost"
