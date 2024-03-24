@@ -18,21 +18,18 @@ export const authOptions = {
         "39107283549-6k4jio04ljg2pdm84m2ggm2dhpmak8gi.apps.googleusercontent.com",
       clientSecret: "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",
     }),
+
     CredentialsProvider({
-      //1. 로그인페이지 폼 자동생성해주는 코드
-      name: "credentials",
+      // credentials provider 설정
+      name: "Credentials",
       credentials: {
         email: { label: "email", type: "text" },
         password: { label: "password", type: "password" },
       },
-
-      //2. 로그인요청시 실행되는코드
-      //직접 DB에서 아이디,비번 비교하고
-      //아이디,비번 맞으면 return 결과, 틀리면 return null 해야함
       async authorize(credentials) {
-        let db = (await connectDB).db("forum");
+        let db = (await connectDB).db("ghostwriter");
         let user = await db
-          .collection("user_cred")
+          .collection("member")
           .findOne({ email: credentials.email });
         if (!user) {
           console.log("해당 이메일은 없음");
@@ -77,8 +74,9 @@ export const authOptions = {
   },
   pages: {
     signIn: "/signin",
+    logIn: "/login",
   },
-  secret: "chichikim0901",
+  secret: process.env.NEXTAUTH_SECRET,
   adapter: MongoDBAdapter(connectDB),
 };
 export default NextAuth(authOptions);

@@ -1,5 +1,11 @@
+* {
+  font-family: "distillery";
+  text-decoration: none;
+}
 body {
   background-color: #ff6100;
+  margin: 0;
+  padding: 0;
 }
 button {
   cursor: pointer;
@@ -11,4 +17,7 @@ button {
 @font-face {
   font-family: "distillery";
   src: url("../public/fonts/distillerydisplay.ttf") format("truetype");
+}
+Link {
+  text-decoration: none;
 }
