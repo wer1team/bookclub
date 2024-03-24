@@ -1,13 +1,12 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=C0C0C0&height=200&section=header&text=GHOST👻BookClub&fontSize=60&animation=twinkling&fontColor=F0F8FF&fontAlign=65&fontAlignY=35)
-
-## We are One TEAM 😊
- - 김경민 (Junior Developer)
+![mainPage](https://github.com/Kyung-min-Kim/ghostwriter/assets/117739376/5025a75a-ba62-441f-a28f-48bcb61471e3)
+## Team member
+ - Kyungmin Kim (Junior Developer)
  - 현석호 (Basketball player)
 
-## Project✨
- - 우리 모두 독서를 즐겨요~ 모두를 위한 책 감상문 및 도서 추천 웹사이트 !
+## Project (On going)
+ - A book club website where anonymous and shy ghostwriters can write their book diaries and recommend books.
 
-## Development Tools 🔧
+## Development Tools 
 <div align="left">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white" />
   <img src="https://img.shields.io/badge/Next.js-007396?style=flat&logo=Next.js&logoColor=white" />
