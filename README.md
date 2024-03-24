@@ -1,4 +1,4 @@
-![mainPage](https://github.com/Kyung-min-Kim/ghostwriter/assets/117739376/5025a75a-ba62-441f-a28f-48bcb61471e3)
+![mainPage](https://github.com/wer1team/bookclub/assets/117739376/b96fe1bd-afa7-4bde-95ea-8529fda5f7c6)
 ## Team member
  - Kyungmin Kim (Junior Developer)
  - 현석호 (Basketball player)
